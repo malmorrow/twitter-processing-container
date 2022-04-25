@@ -15,3 +15,9 @@ Next steps:
 * Create push subscription onto Dataflow.
 * Format the tweets in Dataflow to get something interesting out of them.
 * Write the results into BigQuery.
+
+# Pub/Sub emulator
+
+`scripts/start-pubsub-emulator.sh` will run the emulator from the command line in a container. I have yet to figure out how to get it to run in background (`-d` flag?) and then communicate with it. Also, how to set up topics, publishers and subscribers.
+
+Another approach to the emulator is to [create a docker image](https://hub.docker.com/r/markkrijgsman/pubsub) that creates a container that runs it. This is set up in `src/test/resources/docker`.
