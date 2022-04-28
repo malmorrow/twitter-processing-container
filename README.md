@@ -2,6 +2,7 @@
 
 The goal is to intercept some tweets using GKE containers, and stream them to a pipeline:
 ![Twitter processing architecture](architecture-1.png "Twitter processing architecture")
+(Diagram created using [Excalidraw](https://googlecloudcheatsheet.withgoogle.com/architecture).)
 
 To help keep the costs down, I've figured out how to use Deployment Manager to deploy and destroy the cluster on demand.
 
